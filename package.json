@@ -1,0 +1,39 @@
+{
+  "name": "restful-promise",
+  "version": "1.0.0",
+  "description": "Promise-based RESTful API for node applications.",
+  "main": "src/api.js",
+  "dependencies": {
+    "jasmine-node": "^1.14.5",
+    "rest-interface": "^1.0.1",
+    "simple-promise": "^1.2.3",
+    "underscore": "^1.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jasmine-node tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cobbdb/restful-promise.git"
+  },
+  "keywords": [
+    "promise",
+    "api",
+    "rest",
+    "restful",
+    "api",
+    "lean",
+    "light",
+    "lite",
+    "callback",
+    "simple",
+    "easy"
+  ],
+  "author": "Dan Cobb <cobbdb@gmail.com> (http://www.github.com/cobbdb)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cobbdb/restful-promise/issues"
+  },
+  "homepage": "https://github.com/cobbdb/restful-promise"
+}
