@@ -1,4 +1,4 @@
-# restful-promise [![NPM version](https://badge.fury.io/js/simple-promise.svg)](http://badge.fury.io/js/restful-promise)
+# restful-promise [![NPM version](https://badge.fury.io/js/restful-promise.svg)](http://badge.fury.io/js/restful-promise)
 
 Promise-based RESTful API for node applications.
 
