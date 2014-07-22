@@ -5,8 +5,11 @@ var _ = require('underscore');
 var getPromise = function (task) {
     return function () {
         var args = _(arguments).values();
-        return promise(function () {
-            return task.apply(this, args);
+        return promise(function (done) {
+            var res;
+            args.push(done);
+            res = task.apply(this, args);
+            return res;
         });
     };
 };
