@@ -16,7 +16,7 @@ API definition stays exactly the same as it was in rest-interface...
 
     var api = require('restful-promise');
     module.exports = api({
-        get: function (all, your, args, done) {
+        get: function (done, all, your, args) {
             // "done" signals that your async behavior
             // has completed.
             done(some, values);
