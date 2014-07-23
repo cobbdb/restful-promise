@@ -3,7 +3,7 @@ describe('restful-promise', function () {
     describe('then task', function () {
         it('is called after promise', function (done) {
             var res = api({
-                put: function (msg, punc, done) {
+                put: function (done, msg, punc) {
                     done(msg + 123 + punc);
                 }
             });

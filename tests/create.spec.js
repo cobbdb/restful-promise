@@ -6,16 +6,15 @@ describe('restful-promise', function () {
             expect(res.get).toBeDefined();
             expect(res.put).toBeDefined();
         });
-        it('can define some actions', function (done) {
+        it('can define some actions', function () {
             var res = api({
-                delete: function (num, punc) {
+                delete: function (done, num, punc) {
                     return 'abc' + num + punc;
                 }
             });
             expect(function () {
                 var msg = res.delete(321, '$').run();
                 expect(msg).toEqual('abc321$');
-                done();
             }).not.toThrow();
         });
     });

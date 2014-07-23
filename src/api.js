@@ -7,7 +7,7 @@ var getPromise = function (task) {
         var args = _(arguments).values();
         return promise(function (done) {
             var res;
-            args.push(done);
+            args.unshift(done);
             res = task.apply(this, args);
             return res;
         });
